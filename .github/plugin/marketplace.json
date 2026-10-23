@@ -1,0 +1,15 @@
+{
+  "name": "krawiec",
+  "description": "Pluginy dla agentów AI: proces wytwarzania oprogramowania (SDLC)",
+  "owner": {
+    "name": "krawiec"
+  },
+  "plugins": [
+    {
+      "name": "krawiec-sdlc",
+      "description": "Proces wytwarzania oprogramowania z AI: standardy, init, plan, implementacja (TDD), review, dokumentacja, PR, deliver, ADR; MCP Jira/Confluence",
+      "version": "1.0.0",
+      "source": "./plugins/krawiec-sdlc"
+    }
+  ]
+}

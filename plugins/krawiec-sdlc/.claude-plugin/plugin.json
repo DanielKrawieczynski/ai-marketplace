@@ -1,0 +1,10 @@
+{
+  "name": "krawiec-sdlc",
+  "version": "1.0.0",
+  "description": "Proces wytwarzania oprogramowania z AI: standardy, init, plan, implementacja (TDD), review, dokumentacja, PR, deliver, ADR; MCP Jira/Confluence",
+  "author": {
+    "name": "DK4Dev Daniel Krawieczyński"
+  },
+  "repository": "https://github.com/DanielKrawieczynski/ai-marketplace",
+  "license": "MIT"
+}

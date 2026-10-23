@@ -1,0 +1,13 @@
+{
+  "name": "org-standards",
+  "description": "Standardy organizacji dla pluginu sdlc",
+  "owner": { "name": "org-standards" },
+  "plugins": [
+    {
+      "name": "org-standards",
+      "description": "Standardy organizacji dla pluginu sdlc: praktyki inżynierskie, API, QA, code review",
+      "version": "0.1.0",
+      "source": "./"
+    }
+  ]
+}
