@@ -1,6 +1,6 @@
 {
   "name": "krawiec",
-  "description": "Pluginy dla agentów AI: proces wytwarzania oprogramowania (SDLC)",
+  "description": "Pluginy dla agentów AI: proces wytwarzania oprogramowania (SDLC) i dowody dla PR-ów (Ślepy Programista)",
   "owner": {
     "name": "krawiec"
   },
@@ -12,6 +12,20 @@
       "source": {
         "source": "local",
         "path": "./plugins/krawiec-sdlc"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "krawiec-blind-programmer",
+      "description": "Dylemat i Test Ślepego Programisty jako nakładka na krawiec-sdlc: scenariusze tc-N, niezależne testy, blind-deliver (zadanie → PR z dowodami), blind-test (werdykt i braki), blind-ready (kompletność zadania)",
+      "version": "1.0.0",
+      "source": {
+        "source": "local",
+        "path": "./plugins/krawiec-blind-programmer"
       },
       "policy": {
         "installation": "AVAILABLE",

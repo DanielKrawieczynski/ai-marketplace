@@ -56,6 +56,24 @@ Granice automatyzacji: przed pierwszym commitem agent pyta, czy commitować i w 
 
 `krawiec-sdlc` działa na ogólnych, domyślnych standardach. Firma może dołożyć własne: wystarczy plugin ze skillem o nazwie `org-standards`, którego `SKILL.md` jest indeksem tematów (plik, zawartość, kiedy czytać). `sdlc` wykrywa go sam i daje jego regułom pierwszeństwo. Gotowy szkielet do skopiowania do własnego (np. prywatnego) repo: [templates/org-standards/](templates/org-standards/README.md).
 
+## krawiec-blind-programmer — dowody zamiast czytania kodu
+
+Nakładka na `krawiec-sdlc` oparta na Dylemacie Ślepego Programisty: *jakich dowodów potrzebuję, żeby odpowiedzialnie zatwierdzić PR, nie opierając decyzji na przeczytaniu kodu?* Plan, TDD, review, dokumentację i PR robi `krawiec-sdlc`; ten plugin dokłada zatwierdzone scenariusze, niezależne testy i ocenę dowodów. Brak dowodu jest tu pełnoprawnym wynikiem.
+
+```shell
+claude plugin install krawiec-sdlc@krawiec            # wymagany
+claude plugin install krawiec-blind-programmer@krawiec
+```
+
+| Skill | Do czego |
+|-------|----------|
+| `blind-ready` | czy zadanie jest kompletne: scenariusze `tc-N` ze skutkami i zakazami, błędy, zdarzenia, dane, reakcja; GOTOWY / WYMAGA DOPRECYZOWANIA |
+| `blind-deliver` | od zadania do PR-a: zwykły przebieg `sdlc-*` (plan, TDD, review, docs, PR) plus niezależne testy scenariuszowe i ocena wstępna |
+| `blind-test` | Test Ślepego Programisty: werdykt WYSTARCZAJĄCY / NIEWYSTARCZAJĄCY, statusy kryteriów TSP-01…09, lista braków |
+| `blind-standards` | zasady, kryteria, role, formaty raportu i manifestu |
+
+Podagenci: `blind-scenario-tester` (nie widzi implementacji), `blind-reviewer`. Człowiek zatwierdza scenariusze, push/PR i merge.
+
 ## Rozwój
 
 Notatki techniczne o manifestach, hookach i MCP: [DEVELOPMENT.md](DEVELOPMENT.md).

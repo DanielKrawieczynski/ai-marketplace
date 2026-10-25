@@ -11,6 +11,7 @@ plugins/krawiec-sdlc/
   plugin.json                     # manifest Copilot CLI
   skills/<skill>/SKILL.md (+ references/, templates/)
   agents/, hooks/, .mcp.json
+plugins/krawiec-blind-programmer/  # nakładka na krawiec-sdlc: skille blind-*, agenci blind-* (bez hooka i .mcp.json)
 templates/org-standards/          # szkielet pluginu ze standardami organizacji
 ```
 
@@ -26,8 +27,12 @@ templates/org-standards/          # szkielet pluginu ze standardami organizacji
 
 ## Standardy organizacji
 
-Umowa z pluginem organizacji: skill o nazwie `org-standards`, `SKILL.md` jako indeks (plik, zawartość, kiedy). `krawiec-sdlc` nie zna nazw plików ani ścieżek. Zasada jest w `sdlc-standards` („Standardy organizacji”), odwołania w `sdlc-plan`, `sdlc-implement`, `sdlc-review`. Nie sprawdzone: czy skill z drugiego pluginu jest widoczny w Copilot CLI.
+Umowa z pluginem organizacji: skill o nazwie `org-standards`, `SKILL.md` jako indeks (plik, zawartość, kiedy). `krawiec-sdlc` nie zna nazw plików ani ścieżek. Zasada jest w `sdlc-standards` („Standardy organizacji”), odwołania w `sdlc-plan`, `sdlc-implement`, `sdlc-review`. Nie sprawdzone: czy skill z drugiego pluginu jest widoczny w Copilot CLI. Granice „tester scenariuszy nie widzi implementacji” i „`blind-test` nie ocenia implementacji” nie są wymuszone narzędziami (narzędzia nie ograniczają ścieżek): opierają się na instrukcji, świeżym kontekście podagenta i sekcji „Pochodzenie” w `evidence.md`; `blind-test` oznacza brak świeżego kontekstu jako „niezależność nieustalona”.
 
 ## Wersjonowanie
 
-Zmiana w pluginie: podbij wersję w obu `plugin.json` i w trzech `marketplace.json`, dopisz wpis do `CHANGELOG.md`. Bez podbicia wersji użytkownicy nie dostaną zmiany. Walidacja: `claude plugin validate <repo>`.
+Zmiana w pluginie (każdym osobno): podbij jego wersję w obu `plugin.json` i w trzech `marketplace.json`, dopisz wpis do `CHANGELOG.md`. Bez podbicia wersji użytkownicy nie dostaną zmiany. Walidacja: `claude plugin validate <repo>`.
+
+## krawiec-blind-programmer
+
+Zależy od `krawiec-sdlc` (odwołania `krawiec-sdlc:sdlc-*` po nazwie, nie po ścieżce; nie kopiuj jego skilli). Nie ma własnego `.mcp.json` ani hooka: Jira/Confluence i zasady pracy dostarcza `krawiec-sdlc`. Scenariusze to `tc-N` z `docs/scenarios/`. Nie sprawdzone: czy skill z drugiego pluginu jest widoczny w Copilot CLI.

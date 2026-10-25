@@ -2,6 +2,15 @@
 
 Format: `<plugin> [MAJOR.MINOR.PATCH]`.
 
+## krawiec-blind-programmer 1.0.0 — 2026-10-25
+
+Nowy plugin oparty na Dylemacie i Teście Ślepego Programisty, jako nakładka na `krawiec-sdlc` (wymaga go w sesji).
+
+- Skille: `blind-standards` (zasady, kryteria TSP-01…09, statusy, role, formaty, szablon `evidence.md`), `blind-ready` (kompletność zadania, scenariusze `tc-N`), `blind-deliver` (zadanie → PR: `sdlc-init`, `sdlc-plan`, `sdlc-implement-tdd`, `sdlc-review`, `sdlc-docs`, `sdlc-pr` plus niezależne testy scenariuszowe i ocena dowodów), `blind-test` (werdykt WYSTARCZAJĄCY / NIEWYSTARCZAJĄCY i lista braków).
+- Podagenci: `blind-scenario-tester` (testy bez dostępu do implementacji), `blind-reviewer` (tryby `tests`, `impl`, `audit`). Role TDD przejmują podagenci `sdlc-tdd-*`.
+- Odchylenia od źródła (docs Ślepego Programisty): „AKS” uogólniono do „orkiestratora (np. AKS)” w TSP-04 i TSP-06; ID `SCN-*` zastąpiono `tc-N` z `krawiec-sdlc`; `blind-test` czyta kod i testy tylko do weryfikacji dowodów (docs zmieniono tak samo).
+- Dokumentacja: scenariusze w `docs/scenarios/`, plan w `/.vibe/plan/<TICKET>/` z nowym plikiem `evidence.md` i wynikiem `evidence-report.md`.
+
 ## 1.0.0 — 2026-10-23
 
 Wersja uniwersalna, niezależna od organizacji.
