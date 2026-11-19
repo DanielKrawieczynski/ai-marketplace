@@ -13,7 +13,7 @@ Właściciel: <usługa>. Inni writerzy (także z innych repo tej solucji): <list
 |---|---|---|---|---|---|---|
 
 ## Zdarzenia (TSP-08)
-| Zdarzenie | Duplikat | Opóźnienie | Zmiana kolejności | Ponowienie | Oczekiwany rezultat | tc-N |
+| Zdarzenie | Duplikat | Opóźnienie | Zmiana kolejności | Ponowienie | Oczekiwany rezultat | sc-X-Y |
 |---|---|---|---|---|---|---|
 
 ## Dane i złe dane (TSP-09)

@@ -2,6 +2,15 @@
 
 Format: `<plugin> [MAJOR.MINOR.PATCH]`.
 
+## 1.1.0 — 2026-11-19
+
+Historyjki, scenariusze biznesowe i techniczne, polityka techniczna oraz etapy i kroki planu (`krawiec-sdlc` i `krawiec-blind-programmer`).
+
+- Nowe nazewnictwo w `sdlc-standards/references/terminology/`: `pl.md` (hist, sc, etap, krok), `en.md` (us, tc, stage, task; domyślny dla pozostałych języków), `la.md` (fabula, casus, gradus, passus; na prośbę). Repo z własną numeracją (np. ciągłe `@tc-N`) zachowuje ją.
+- `scenarios-format.md` przepisany: historyjka ma jak najmniej scenariuszy biznesowych (zwykle 3–7), jedna ścieżka = jeden scenariusz, podział na scenariusze biznesowe (`docs/scenarios/<obszar>.md`), politykę techniczną (`policies.md`, zatwierdzana raz) i scenariusze techniczne (`technical-cases.md`). Ocena kompletności sprawdza pokrycie polityki zamiast wymuszać scenariusze na każdą awarię. Pytania `blind-ready` mają format: sytuacja, co zmienia decyzja, rekomendacja.
+- Plan: etapy (jeden etap = jeden PR, należy do jednej historyjki) zamiast „PR-ów”; kamień milowy tylko jako opcjonalny znacznik na liście historyjek. Zmienione `steps.md`, `tests.md`, `plan-format.md`, `sdlc-implement` („Etapy i równoległość”), `sdlc-deliver`, `blind-deliver`.
+- ID scenariuszy `tc-N` zastąpione `sc-X-Y` w skillach, agentach i szablonach `krawiec-blind-programmer`. Nowe szablony: `policies.md`, `technical-cases.md`.
+
 ## krawiec-blind-programmer 1.0.0 — 2026-10-25
 
 Nowy plugin oparty na Dylemacie i Teście Ślepego Programisty, jako nakładka na `krawiec-sdlc` (wymaga go w sesji).

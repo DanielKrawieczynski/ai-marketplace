@@ -8,7 +8,7 @@ Status: propozycja. Manifest generuje **zaufany etap pipeline'u** z wyników job
   "pr": 0, "commit": "<full-sha>", "image": "<name@sha256:...>", "environment": "preproduction",
   "source": { "ticket": "<TICKET>", "scenariosRevision": "<rev>" },
   "scenarios": [
-    { "id": "tc-1", "level": ["hermetic"], "testIds": ["..."], "expected": "<obserwowalny wynik>",
+    { "id": "sc-1-1", "level": ["hermetic"], "testIds": ["..."], "expected": "<obserwowalny wynik>",
       "result": "PASSED", "evidenceIds": ["EV-INT-001"],
       "review": { "status": "APPROVED", "reviewer": "<tożsamość>", "reference": "<zapis review>" } }
   ],

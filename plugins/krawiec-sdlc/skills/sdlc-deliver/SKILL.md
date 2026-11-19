@@ -23,11 +23,11 @@ W obu trybach stój też, gdy: wymagania są niejasne albo ticket przeczy kodowi
 
 ## 1. Plan — `sdlc-plan`
 - W trybie auto pytaj tylko o to, co blokuje plan; resztę zapisz jako założenia w `overview.md`.
-- Zacommituj plan. W trybie standard pokaż podsumowanie (złożoność, PR-y, ryzyka, założenia) i czekaj na akceptację.
-- Plan ma kilka PR-ów — zapytaj raz, jak budować kolejne gałęzie: na poprzedniej (domyślnie, bez czekania na merge) czy od bazowej po merge poprzedniego.
+- Zacommituj plan. W trybie standard pokaż podsumowanie (złożoność, etapy, ryzyka, założenia) i czekaj na akceptację.
+- Plan ma kilka etapów — zapytaj raz, jak budować kolejne gałęzie: na poprzedniej (domyślnie, bez czekania na merge) czy od bazowej po merge poprzedniego.
 
-## 2–5. Dla każdego PR z `steps.md`, w kolejności wdrożenia
-Niezależne PR-y mogą iść równolegle u podagentów (`sdlc-implement` → „PR-y i równoległość”; pytanie raz, także w trybie auto).
+## 2–5. Dla każdego etapu z `steps.md` (jeden etap = jeden PR), w kolejności wdrożenia
+Niezależne etapy mogą iść równolegle u podagentów (`sdlc-implement` → „Etapy i równoległość”; pytanie raz, także w trybie auto).
 
 2. **Implementacja** — `sdlc-implement` (albo `sdlc-implement-tdd` na prośbę o TDD): kroki PR bez pytania o każdy z nich; „akceptacja ręczna” z planu to punkt kontrolny.
 3. **Review** — `sdlc-review` zmian tego PR (standard; security i nfr przy krokach z `nfr-impact`). Krytyczne i istotne problemy napraw od razu, bez czekania na akceptację raportu (wyjątek od zasady skilla), zacommituj, powtórz review zmienionych miejsc — maksymalnie 2 rundy, resztę przenieś do opisu PR. Build, testy i analiza z ostatniej rundy dla bieżącego HEAD są wynikiem PR — nie powtarzaj ich w kroku 5.

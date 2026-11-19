@@ -4,7 +4,7 @@ Każde kryterium oceniaj osobno; `NOT_APPLICABLE` tylko z uzasadnieniem i zatwie
 
 | ID | Kryterium | Wymagany dowód |
 |----|-----------|----------------|
-| TSP-01 | UT przechodzą, mają uzgodnione pokrycie i raport mutacji; test-first dla istotnego zachowania, a przy odstępstwie — niezależne review UT | wynik UT; pokrycie z zakresem i mianownikiem; raport mutacji + uzasadnienie istotnych przetrwałych mutantów; dla test-first: test był czerwony z powodu braku zachowania, potem zielony; przy odstępstwie: uzasadnienie i review UT. UT ocenia się względem lokalnych reguł i sensu asercji; nie wymaga się mechanicznego mapowania UT do ID `tc-N` |
+| TSP-01 | UT przechodzą, mają uzgodnione pokrycie i raport mutacji; test-first dla istotnego zachowania, a przy odstępstwie — niezależne review UT | wynik UT; pokrycie z zakresem i mianownikiem; raport mutacji + uzasadnienie istotnych przetrwałych mutantów; dla test-first: test był czerwony z powodu braku zachowania, potem zielony; przy odstępstwie: uzasadnienie i review UT. UT ocenia się względem lokalnych reguł i sensu asercji; nie wymaga się mechanicznego mapowania UT do ID `sc-X-Y` |
 | TSP-02 | Niezależny tester zweryfikował scenariusze integracyjne/E2E, w tym istotne błędy techniczne | wyniki testów, pokrycie gałęzi z zakresem i mianownikiem, powiązanie z ID scenariuszy |
 | TSP-03 | Quality Gate analizy statycznej (np. SonarQube) zielony | wynik bramki dla tego PR-a |
 | TSP-04 | Aplikacja gotowa na orkiestrator (np. AKS), zależności osiągalne | probe'y startup/readiness/liveness, status wdrożenia, liczba nieoczekiwanych restartów; liveness bez zależności zewnętrznych |

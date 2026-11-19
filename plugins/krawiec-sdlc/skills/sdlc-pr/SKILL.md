@@ -25,7 +25,7 @@ Warunek niespełniony — zatrzymaj się i pokaż, czego brakuje.
 Tytuł: `<TICKET> <tytuł ticketu lub krótki opis>`; przy kilku PR-ach do ticketu `<TICKET> (n/m) <opis>`. Treść po polsku, wg szablonu repo, jeśli jest:
 - **Ticket** — link,
 - **Co i dlaczego** — 2–5 zdań z `overview.md`,
-- **Zakres** — kroki tego PR z `steps.md`: zrobione / pominięte (z powodem),
+- **Zakres** — kroki tego etapu z `steps.md`: zrobione / pominięte (z powodem),
 - **Kontrakty i migracje** — zmiany API, zdarzeń, schematu; breaking czy nie, a przy breaking: czy zapowiedź z ticketu wysłano lub jest do wysłania,
 - **Testy** — co dodano, wynik,
 - **Review** — podsumowanie raportu, znane ryzyka, otwarte kwestie,

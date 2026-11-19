@@ -5,7 +5,7 @@ description: Implementacja planu metodą TDD z rolami — tester (red), implemen
 
 # Implementacja TDD z rolami
 
-Wariant `sdlc-implement`: jego kontekst, „PR-y i równoległość” i „Czego nie robić” obowiązują. Ten skill zmienia tylko sposób realizacji kroku.
+Wariant `sdlc-implement`: jego kontekst, „Etapy i równoległość” i „Czego nie robić” obowiązują. Ten skill zmienia tylko sposób realizacji kroku.
 
 ## Role
 | Rola | Kto | Robi | Nie wolno |

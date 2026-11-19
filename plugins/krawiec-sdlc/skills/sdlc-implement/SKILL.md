@@ -14,8 +14,8 @@ Najpierw sprawdź, czy nie ma skilla wyspecjalizowanego w tym zadaniu (`sdlc-sta
 
 Nie wskazano kroku — weź pierwszy niezrealizowany wg `steps.md` i `git log`.
 
-## PR-y i równoległość
-Realizuj w granicach PR-ów z `steps.md`. Gdy plan ma kroki niezależne, zapytaj raz przed startem, czy je zrównoleglić: główny tor idzie łańcuchem zależności, niezależne kroki robią podagenci (w Claude Code każdy w osobnym git worktree), każdy jako osobny PR lub scalany do gałęzi głównego toru. Bez podagentów — po kolei, z zachowaniem granic PR-ów.
+## Etapy i równoległość
+Realizuj w granicach etapów z `steps.md` (etap = jeden PR). Gdy plan ma kroki niezależne, zapytaj raz przed startem, czy je zrównoleglić: główny tor idzie łańcuchem zależności, niezależne kroki robią podagenci (w Claude Code każdy w osobnym git worktree), każdy jako osobny PR lub scalany do gałęzi głównego toru. Bez podagentów — po kolei, z zachowaniem granic etapów.
 
 ## Czego nie robić
 Nic poza planem — także refaktoringu, zmiany logiki biznesowej ani usuwania funkcji — bez uzgodnienia. Nowe zależności tylko z uzasadnieniem w planie.
@@ -23,7 +23,7 @@ Nic poza planem — także refaktoringu, zmiany logiki biznesowej ani usuwania f
 ## Krok
 1. **Zakres:** odczytaj „Plan” kroku, potwierdź zgodność zakresu i spełnienie zależności. Rozbieżność — zatrzymaj się i pokaż ją człowiekowi.
 2. **Kod:** implementacja, migracje, konfiguracja wg kroku.
-3. **Testy** razem z kodem, nie po etapie — `references/testing.md`. Nowe i zmienione scenariusze `tc-N` dopisz do `docs/scenarios/<obszar>.md` (`../sdlc-standards/templates/docs/scenarios.md`).
+3. **Testy** razem z kodem, nie po etapie — `references/testing.md`. Nowe i zmienione scenariusze `sc-X-Y` dopisz do `docs/scenarios/<obszar>.md` (`../sdlc-standards/templates/docs/scenarios.md`).
 4. **`/.vibe`:** zaktualizuj wg `../sdlc-standards/templates/vibe/README.md`, jeśli krok zmienia mapę lub reguły. Jeśli krok zmienia kontrakty lub opis serwisu, a repo ma plik katalogu usług — zaktualizuj go w tym PR. `/docs` zostaje do `sdlc-docs`.
 5. **Weryfikacja:** build i testy wg `sdlc-standards` oraz komendy z planu; dalej tylko przy zielonym. Brak automatycznej weryfikacji — poproś o ręczną akceptację.
 6. **Commit** wg `sdlc-standards`.

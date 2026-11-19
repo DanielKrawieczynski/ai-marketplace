@@ -13,6 +13,7 @@ Obowiązują przy każdej zmianie kodu, także bez uruchomionego skilla. Konwenc
 - Rób tylko to, o co poproszono. Pomijaj kod generowany i migracje, chyba że dotyczą zadania.
 - Oszczędzaj kontekst: niezależne odczyty (pliki, git, MCP) wykonuj równolegle w jednym kroku, duże pliki czytaj fragmentami, nie powtarzaj odczytów, wyniki narzędzi streszczaj zamiast cytować.
 - Dokumentacja po polsku (UTF-8, z polskimi znakami), komentarze w kodzie po angielsku.
+- Nazwy historyjki, scenariusza, etapu i kroku oraz ich ID: plik z `references/terminology/` wg języka dokumentacji repo (`pl.md`; `en.md` dla pozostałych; `la.md` na prośbę). Repo z własną numeracją zachowuje ją.
 
 ## Ticket, gałąź, commity
 - `<TICKET>` (np. `PROJ-1234`): od użytkownika → z nazwy gałęzi (`[A-Z]+-[0-9]+`) → zapytaj.
@@ -34,6 +35,7 @@ Jeśli w sesji jest skill `org-standards`, przeczytaj jego `SKILL.md` (indeks te
 ## Szczegóły (czytaj, gdy potrzebne)
 | Plik | Kiedy |
 |------|-------|
+| `references/terminology/<język>.md` | nazwy i ID historyjek, scenariuszy, etapów, kroków |
 | `references/workflow.md` | wybór skilla, zmiany kontraktów, inne repozytoria, frameworki |
 | `references/code-standards.md` | implementacja, review, nazwy testów |
 | `references/nfr.md` | kroki z `nfr-impact`, review NFR |
