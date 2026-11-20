@@ -1,7 +1,7 @@
 {
   "name": "krawiec-blind-programmer",
-  "version": "1.1.0",
-  "description": "Dylemat i Test Ślepego Programisty jako nakładka na krawiec-sdlc: scenariusze sc-X-Y, niezależne testy, blind-deliver (zadanie → PR z dowodami), blind-test (werdykt i braki), blind-ready (kompletność zadania)",
+  "version": "1.2.0",
+  "description": "Dylemat i Test Ślepego Programisty jako nakładka na krawiec-sdlc: scenariusze sc-X-Y, niezależne testy, blind-deliver (zadanie → PR z dowodami), blind-test (werdykt i braki), blind-ready (kompletność zadania), blind-plan (plan z politykami technicznymi)",
   "agents": "agents/",
   "author": {
     "name": "DK4Dev Daniel Krawieczyński"

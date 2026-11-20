@@ -26,7 +26,8 @@ Werdykt: **WYSTARCZAJĄCY** — każde wymagane kryterium ma wiarygodny dowód d
 | Co | Gdzie |
 |----|-------|
 | scenariusze — kontrakt zachowania (`@sc-X-Y`, Given/When/Then + skutki i zakazy) | `docs/scenarios/<obszar>.md` (wg `sdlc-standards/templates/docs/scenarios.md`) |
-| zatwierdzenie scenariuszy (kto, kiedy, źródło; commit wskazuje `git blame`) | nagłówek `docs/scenarios/<obszar>.md` |
+| polityka techniczna i scenariusze techniczne (z polityk; generuje `blind-plan`) | `docs/scenarios/policies.md`, `docs/scenarios/technical-cases.md` |
+| zatwierdzenie historyjek, scenariuszy i polityki (kto, kiedy, źródło; commit wskazuje `git blame`) | nagłówek `docs/scenarios/<obszar>.md` (historyjki, scenariusze) i `policies.md` (polityka) |
 | poziomy testów, mapowanie `sc-X-Y` → krok/test | `/.vibe/plan/<TICKET>/tests.md` (gdy plan go ma) |
 | ścieżki techniczne, zdarzenia, dane, alerty, rollback (TSP-07…09), pochodzenie testów scenariuszowych | `/.vibe/plan/<TICKET>/evidence.md` (`templates/evidence.md`) |
 | wynik Testu | `/.vibe/plan/<TICKET>/evidence-report.md` |

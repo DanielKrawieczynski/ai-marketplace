@@ -18,7 +18,7 @@ Tester UT (TDD z `sdlc-implement-tdd`) i tester scenariuszy to dwie różne wars
 Krok lub etap z `steps.md` (mały, spójny wycinek funkcjonalny). Grupowanie pracy nie scala dowodów: wynik jest mapowany do każdego `sc-X-Y`.
 
 ## Bramki architekta (dodatkowe do `architect-gates.md` z `sdlc-implement-tdd`)
-1. **Plan i kontrakt:** scenariusze zatwierdzone przez człowieka, brak otwartych decyzji; dobór poziomów (UT dla lokalnych reguł; hermetyczne od endpointu do skutku; integracyjne dla SQL, brokera, API; E2E/smoke reprezentatywnie, bez powielania niższych poziomów).
+1. **Plan i kontrakt:** historyjki, scenariusze biznesowe i polityka techniczna zatwierdzone przez człowieka, brak otwartych decyzji; dobór poziomów (UT dla lokalnych reguł; hermetyczne od endpointu do skutku; integracyjne dla SQL, brokera, API; E2E/smoke reprezentatywnie, bez powielania niższych poziomów).
 2. **Propozycja testów scenariuszowych** (przed implementacją, dla istotnego zachowania): mapowanie do `sc-X-Y`, dane, obserwowalny wynik, także skutki zabronione, adekwatność poziomu. Odrzuć test wymagający nieuzgodnionego zachowania lub API wymyślonego przez testera. Test, który nie kompiluje się przez nieistniejącą klasę, nie jest wartościowym RED — popraw test albo uzgodnij granicę.
 3. **RED testów scenariuszowych:** build przechodzi, testy padają z powodu braku zachowania (asercja / „not implemented”), nie błędu setupu.
 4. **GREEN i REFACTOR:** jak w `architect-gates.md`; sumy kontrolne (`git hash-object`) obejmują też testy scenariuszowe.

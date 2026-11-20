@@ -22,7 +22,7 @@ Nie podano trybu — zaproponuj jeden z jednozdaniowym uzasadnieniem. Dla `funkc
 - Tylko gdy potrzebne: `../sdlc-standards/references/nfr.md` (kroki z `nfr-impact`), strony Confluence podlinkowane w tickecie (wyszukiwanie dopiero gdy ticket i kod nie wystarczają), skill `org-standards`.
 
 ## 2. Pytania i złożoność
-- Zadaj **jedno zbiorcze pytanie**, tylko o to, co blokuje plan i nie wynika z kodu ani ticketu: cel i rezultat, właściciel i granice, wpływ na kontrakty / dane / konfigurację / integracje, ograniczenia (NFR, migracja, termin wydania), poza zakresem. Poczekaj na odpowiedź. Resztę niejasności zapisz jako założenia w `overview.md`.
+- Zadaj **jedno zbiorcze pytanie**, tylko o to, co blokuje plan i nie wynika z kodu ani ticketu; każde pytanie w formacie: **sytuacja** (konkretny przykład), **co zmienia decyzja**, **rekomendacja** (jako propozycja). Zakres pytania: cel i rezultat, właściciel i granice, wpływ na kontrakty / dane / konfigurację / integracje, ograniczenia (NFR, migracja, termin wydania), poza zakresem. Poczekaj na odpowiedź. Resztę niejasności zapisz jako założenia w `overview.md`.
 - Oceń złożoność i uzasadnij w jednym zdaniu:
 
 | Złożoność | Kiedy | Pliki planu |

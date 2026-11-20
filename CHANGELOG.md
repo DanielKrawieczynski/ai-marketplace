@@ -2,6 +2,25 @@
 
 Format: `<plugin> [MAJOR.MINOR.PATCH]`.
 
+## krawiec-blind-programmer 1.2.0 — 2026-11-20
+
+Nowy skill `blind-plan`; `blind-ready` wraca do oceny kompletności zadania.
+
+- `blind-plan`: wywołuje `sdlc-plan` i uzupełnia plan o pokrycie polityki technicznej, scenariusze techniczne (`technical-cases.md`), mapowanie do testów (biznesowe wierszami, techniczne zbiorczo per polityka) i `evidence.md`. Nowa lub zmieniona polityka wymaga zatwierdzenia człowieka; zatwierdzona i niezmieniona nie.
+- `blind-ready`: przepuszcza zadanie, które opisuje historyjki i scenariusze biznesowe, bez generowania scenariuszy technicznych; sprawdza też kolizje nazw z zatwierdzonymi scenariuszami i dokumentacją.
+- `blind-deliver`: krok 2 to `blind-plan` (w tym `evidence.md`), zatwierdzenie polityki w tym kroku.
+- `krawiec-sdlc` bez zmian (1.1.1).
+
+## 1.1.1 — 2026-11-20
+
+Domknięcie zmian z 1.1.0 (`krawiec-sdlc` i `krawiec-blind-programmer`).
+
+- `blind-deliver`: zatwierdzenie obejmuje historyjki, scenariusze biznesowe i politykę techniczną; scenariuszy technicznych nie pokazuje się pojedynczo.
+- `blind-test`, `criteria.md` (TSP-05), `roles.md`, agenci `blind-scenario-tester` i `blind-reviewer`: scenariusze biznesowe mapowane osobno, techniczne zbiorczo per polityka; zatwierdzenie polityki jest warunkiem werdyktu.
+- `sdlc-plan`: pytanie zbiorcze ma format sytuacja / co zmienia decyzja / rekomendacja.
+- `scenarios-format.md`: usunięte pojęcie „wersja minimum”.
+- `terminology/la.md`: etap po łacinie to `stadium` (było `gradus`), żeby odróżnić go od kroku (`passus`).
+
 ## 1.1.0 — 2026-11-19
 
 Historyjki, scenariusze biznesowe i techniczne, polityka techniczna oraz etapy i kroki planu (`krawiec-sdlc` i `krawiec-blind-programmer`).

@@ -8,7 +8,7 @@
     {
       "name": "krawiec-sdlc",
       "description": "Proces wytwarzania oprogramowania z AI: standardy, init, plan, implementacja (TDD), review, dokumentacja, PR, deliver, ADR; MCP Jira/Confluence",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "source": {
         "source": "local",
         "path": "./plugins/krawiec-sdlc"
@@ -21,8 +21,8 @@
     },
     {
       "name": "krawiec-blind-programmer",
-      "description": "Dylemat i Test Ślepego Programisty jako nakładka na krawiec-sdlc: scenariusze sc-X-Y, niezależne testy, blind-deliver (zadanie → PR z dowodami), blind-test (werdykt i braki), blind-ready (kompletność zadania)",
-      "version": "1.1.0",
+      "description": "Dylemat i Test Ślepego Programisty jako nakładka na krawiec-sdlc: scenariusze sc-X-Y, niezależne testy, blind-deliver (zadanie → PR z dowodami), blind-test (werdykt i braki), blind-ready (kompletność zadania), blind-plan (plan z politykami technicznymi)",
+      "version": "1.2.0",
       "source": {
         "source": "local",
         "path": "./plugins/krawiec-blind-programmer"

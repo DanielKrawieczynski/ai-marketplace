@@ -67,12 +67,13 @@ claude plugin install krawiec-blind-programmer@krawiec
 
 | Skill | Do czego |
 |-------|----------|
-| `blind-ready` | czy zadanie jest kompletne: scenariusze `tc-N` ze skutkami i zakazami, błędy, zdarzenia, dane, reakcja; GOTOWY / WYMAGA DOPRECYZOWANIA |
+| `blind-ready` | czy zadanie jest kompletne: historyjki i scenariusze biznesowe ze skutkami i zakazami, błędy z kontraktu, kolizje nazw; GOTOWY / WYMAGA DOPRECYZOWANIA |
+| `blind-plan` | zwykły plan `sdlc-plan` plus polityka techniczna, scenariusze techniczne, mapowanie do testów i `evidence.md` |
 | `blind-deliver` | od zadania do PR-a: zwykły przebieg `sdlc-*` (plan, TDD, review, docs, PR) plus niezależne testy scenariuszowe i ocena wstępna |
 | `blind-test` | Test Ślepego Programisty: werdykt WYSTARCZAJĄCY / NIEWYSTARCZAJĄCY, statusy kryteriów TSP-01…09, lista braków |
 | `blind-standards` | zasady, kryteria, role, formaty raportu i manifestu |
 
-Podagenci: `blind-scenario-tester` (nie widzi implementacji), `blind-reviewer`. Człowiek zatwierdza scenariusze, push/PR i merge.
+Podagenci: `blind-scenario-tester` (nie widzi implementacji), `blind-reviewer`. Człowiek zatwierdza historyjki, scenariusze, politykę techniczną, push/PR i merge.
 
 ## Rozwój
 
